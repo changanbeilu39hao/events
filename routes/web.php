@@ -15,11 +15,14 @@ use App\Http\Controllers\EventsOnefourfiveController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 
 Route::get('test', [TestController::class, 'index']);
 
 Route::get('SiChuan145', [EventsOnefourfiveController::class, 'show']);
 Route::post('SiChuan145', [EventsOnefourfiveController::class, 'store']);
+
+Route::redirect('/', '/SiChuan145');
