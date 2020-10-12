@@ -1,0 +1,102 @@
+@charset "gb2312";
+@media only screen and (max-width: 1199px) {
+body{
+	background-size: cover;
+}
+	/*顶部*/
+.m_top01{
+	display: none;
+}
+
+/*征集介绍*/
+.content{
+	width: 90%;
+	margin-top: -1rem;
+	padding: 1rem 0.3rem 0.3rem 0.3rem;
+	padding-bottom: 0.6rem;
+	box-sizing: border-box;
+}
+
+/*表单*/
+form{
+	width: 100%;
+	margin-top: 0.6rem;
+}
+.form_item{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 0.2rem;
+}
+.form_item span{
+	line-height: 0.6rem;
+	font-size: 0.26rem;
+	float: none;
+}
+.form_item input,
+.form_item select,
+.text textarea{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	float: none;
+	font-size: 0.26rem;
+	padding: 0 0.1rem;
+}
+.form_item .ff{
+	border: 1px solid #be2b2b;
+	font-size: 0.22rem;
+}
+::-webkit-input-placeholder, ::-webkit-itextarea-placeholder{ 
+  font-size: 0.22rem;
+}
+
+::-moz-placeholder,::-webkit-itextarea-placeholder{ 
+ font-size: 0.22rem;;
+}
+
+:-ms-input-placeholder,::-webkit-itextarea-placeholder{
+ font-size: 0.22rem;
+} 
+.theme select option{
+	height: 0.36rem;
+	font-size: 0.22rem;
+	line-height: 0.44rem;
+}
+
+.text textarea{
+	font-family: "microsoft yahei";
+	padding: 0.2rem;
+	min-height: 1rem;
+	line-height: 0.39rem;
+}
+input[type =submit]{
+	width: 80%;
+	background: #BE2B2B;
+	color: #fff;
+	height: 0.6rem;
+	font-size: 0.26rem;
+	margin-top: 0.4rem;
+}
+.title{
+	font-size: 0.24rem;
+	margin-top: 0.6rem;
+}
+
+
+/*底部*/
+.mfoot{
+	margin-top:1rem;
+	padding: 0.4rem 0;
+}
+.mfoot p{
+	font-size: 0.2rem;
+	line-height: 0.3rem;
+}
+.mfoot p br{
+	display: block;
+}
+/*底部完*/
+	
+
+}
