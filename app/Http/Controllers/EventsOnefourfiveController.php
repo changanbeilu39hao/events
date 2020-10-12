@@ -30,7 +30,7 @@ class EventsOnefourfiveController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required|max:50',
             'email' => 'required|email',
-            'tel' => 'required|max:20|min:7',
+            'tel' => 'required|max:20|min:7|regex:/^1[345789][0-9]{9}$/',
             'category' => 'required',
             'content' => 'required'
         ],$this->messages());
@@ -56,8 +56,9 @@ class EventsOnefourfiveController extends Controller
     public function messages()
     {
         return [
-            'tel.min' => '请确认电话格式是否正确',
-            'tel.max' => '请确认电话格式是否正确',
+            'tel.min' => '请确认电话长度是否正确',
+            'tel.max' => '请确认电话长度是否正确',
+            'tel.regex' => '请确认电话格式是否正确'
         ];
     }
 }
