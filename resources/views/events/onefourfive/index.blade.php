@@ -42,15 +42,15 @@
 				@csrf
 		 		<div class="form_item" id="begin">
 		 			<span>姓名</span>
-		 			<input type="text" name="name" placeholder="请输入您的姓名" required="required" value="{{ old('name') }}"/>
+		 			<input type="text" name="name" placeholder="请输入您的姓名" required="required" autocomplete="off" value="{{ old('name') }}"/>
 		 		</div>
 		 		<div class="form_item">
 		 			<span>联系电话</span>
-		 			<input type="text" name="tel" placeholder="请输入您的联系电话" required="required"/>
+		 			<input type="text" name="tel" placeholder="请输入您的联系电话" maxlength="11" autocomplete="off" required="required" value="{{ old('tel') }}"/>
 		 		</div>
 		 		<div class="form_item">
 		 			<span>邮箱</span>
-		 			<input type="email" name="email" placeholder="请输入您的邮箱"  required="required"/>
+		 			<input type="email" name="email" placeholder="请输入您的邮箱"  required="required" autocomplete="off" value="{{ old('email') }}"/>
 		 		</div>
 		 		<div class="form_item theme">
 		 			<span>建言主题</span>
@@ -75,7 +75,7 @@
 		 		</div>
 		 		<div class="form_item text">
 		 			<span>发表建言</span>
-		 			<textarea name="content" placeholder="请输入建言内容" required="required"></textarea>
+		 			<textarea name="content" placeholder="请输入建言内容" required="required" value="{{ old('content') }}"></textarea>
 		 		</div>
 		 		
 				 @if (count($errors) > 0)

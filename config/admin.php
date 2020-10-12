@@ -11,7 +11,7 @@ return [
     | login page.
     |
     */
-    'name' => '四川新闻网',
+    'name' => '四川新闻网活动后台',
 
     /*
     |--------------------------------------------------------------------------
@@ -22,7 +22,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<img src="/vendors/dcat-admin/images/logo.png" width="35"> &nbsp;',
+    'logo' => '四川新闻网活动后台',
 
     /*
     |--------------------------------------------------------------------------
@@ -34,7 +34,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<img src="/vendors/dcat-admin/images/logo.png">',
+    // 'logo-mini' => '后台',
 
     /*
      |--------------------------------------------------------------------------
