@@ -2,6 +2,7 @@
 
 namespace App\Admin\Controllers;
 
+use App\Admin\Extensions\Tools\DeleteEvent;
 use App\Admin\Repositories\EventsOnefourfive;
 use Dcat\Admin\Form;
 use Dcat\Admin\Grid;
@@ -37,6 +38,7 @@ class EventsOnefourfiveController extends AdminController
             $grid->disableFilter();
             $grid->disableViewButton();
             $grid->disableEditButton();
+            $grid->disableBatchDelete();
 
             $titles = [
                 'id' => '排序',
@@ -51,7 +53,9 @@ class EventsOnefourfiveController extends AdminController
 
             $grid->model()->orderBy('created_at', 'desc');
             
-            
+            $grid->batchActions([
+                new DeleteEvent()
+            ]);
         });
     }
 
